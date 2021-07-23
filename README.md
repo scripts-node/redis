@@ -21,5 +21,4 @@ cache.setValue("minhachave","valor-da-minha-chave");
 
 var value = await cache.getValue("minhachave");
 console.log(value)  
-})
 ```
