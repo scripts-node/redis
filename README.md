@@ -16,9 +16,10 @@ new cache().ready(async (error, cache)=>{
 
 ## Chamada por promise
 ```node
-new cache().ready().then(async (cache) => {
-    cache.setValue("minhachave","valor-da-minha-chave");
-    var value = await cache.getValue("minhachave");
-    console.log(value)  
+var cache = await new cache().ready();
+cache.setValue("minhachave","valor-da-minha-chave");
+
+var value = await cache.getValue("minhachave");
+console.log(value)  
 })
 ```
