@@ -2,7 +2,7 @@
 
 ## Incluíndo a classe
 ```node
-var redis = require("redis");
+var cache = require("./src/cache");
 ```
 
 ## Chamada por callback
